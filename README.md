@@ -74,6 +74,10 @@ Python (GDAL, rasterio, geopandas, scikit-learn, SHAP) · QGIS · PostgreSQL + P
 - Never commit passwords, API keys, tokens or personal data. Large rasters stay out of Git (see `data/README.md`).
 - Milestones are tagged: `prob-period-1` (pre-defense 1, as required by the submission form), `pre-defense-2`, `final-pre-defense`. Tags are never moved.
 
+## Use of AI tools
+
+Parts of this stage were prepared with the help of an AI assistant (Claude, Anthropic).
+
 ## Status
 
 Current stage: requirements, analysis and design (pre-defense 1, 24 October 2026).
