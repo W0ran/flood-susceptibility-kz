@@ -10,7 +10,7 @@ Four key technical decisions, each with three alternatives. ✓ marks the choice
 |---|---|---|
 | AHP (expert weights) | Simple, transparent, no flood inventory needed | Subjective weights, no accuracy check |
 | Frequency Ratio | Statistical, easy to explain per class | Ignores factor interactions |
-| ✓ Random Forest + SHAP | High accuracy, SHAP explains every cell | Needs a flood inventory, more complex |
+| ✓ Random Forest + SHAP | Potentially high predictive accuracy (to be confirmed by validation); SHAP explains every prediction | Needs a flood inventory, more complex; SHAP explains the model, not whether it is correct |
 
 **Choice:** Random Forest + SHAP as the main model; AHP and Frequency Ratio kept as interpretable baselines.
 **Requirement link:** NFR Accuracy (AUC ≥ 0.80), NFR Interpretability, FR2.
