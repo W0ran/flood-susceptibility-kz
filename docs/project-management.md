@@ -24,7 +24,7 @@ We moved from YouTrack to Taiga in October 2026 after discussing it with the sup
 | Period | Milestone | Deliverable |
 |---|---|---|
 | Sep 2026 | Topic, team, approval | Application and justifications submitted |
-| Oct 2026 | Requirements & analysis | **Pre-defense 1 (24 Oct 2026)** — tag `pre-defense-1` |
+| Oct 2026 | Requirements & analysis | **Pre-defense 1 (24 Oct 2026)** — tag `prob-period-1` |
 | Oct – Nov 2026 | Data & factor rasters | Factor rasters for 3–4 cities, flood inventory |
 | Nov – Dec 2026 | Model + SHAP | Trained and validated models |
 | Dec 2026 – Feb 2027 | API & web map | Working prototype — pre-defense 2 (`pre-defense-2`) |

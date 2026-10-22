@@ -72,7 +72,7 @@ Python (GDAL, rasterio, geopandas, scikit-learn, SHAP) · QGIS · PostgreSQL + P
 - No direct pushes to `main`: work in a branch, open a Pull Request, get one review from a teammate, then merge.
 - Commit small and often. Each member commits from their own GitHub account.
 - Never commit passwords, API keys, tokens or personal data. Large rasters stay out of Git (see `data/README.md`).
-- Milestones are tagged: `pre-defense-1`, `pre-defense-2`, `final-pre-defense`. Tags are never moved.
+- Milestones are tagged: `prob-period-1` (pre-defense 1, as required by the submission form), `pre-defense-2`, `final-pre-defense`. Tags are never moved.
 
 ## Status
 
