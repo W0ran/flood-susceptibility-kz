@@ -9,7 +9,7 @@ Prioritised with MoSCoW. ↑ = priority raised after the user survey (n = 22), s
 | ID | Requirement | Priority | Acceptance criterion | Use case |
 |---|---|---|---|---|
 | FR1 | Show a susceptibility map (5 classes) for a selected city | Must | The map loads in ≤ 3 s for each of the 3–4 cities | View susceptibility map |
-| FR2 | Explain factor contributions for any clicked location | Must | The panel lists all factors with SHAP shares summing to 100% | See factor explanation |
+| FR2 | Explain factor contributions for any clicked location | Must | The panel lists all factors with their contribution share: absolute SHAP values normalized to sum to 100%, with the sign shown as raising or lowering risk | See factor explanation |
 | FR3 | Compare cities by share of area in each class | Must | Chart values match values computed from the rasters (±1%) | Compare cities |
 | FR4 | Search by address or coordinates | Must ↑ | Top-1 geocoding hit for 9 of 10 test addresses | Search address |
 | FR5 | Toggle layers: factors, 2024 flood extent | Should | Each layer toggles without page reload | View susceptibility map |
