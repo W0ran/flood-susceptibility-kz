@@ -1,0 +1,32 @@
+%% Component diagram (first draft) — Flood Susceptibility System
+%% Source of truth for slide 16.
+%% Processing runs offline as a Python pipeline and writes results to the data layer; the API only reads.
+flowchart TB
+    subgraph Presentation
+        WEB["Web client<br/>(React + Leaflet)"]
+    end
+
+    subgraph API
+        REST["REST API (FastAPI)<br/>map · explain · compare · export"]
+        TILES["Tile server<br/>(XYZ from COG)"]
+    end
+
+    subgraph Processing["Processing (offline Python pipeline)"]
+        ING["Data ingestion<br/>(DEM, Sentinel-1, OSM)"]
+        FAC["Factor builder<br/>(slope, TWI, distances)"]
+        MOD["Model + SHAP<br/>(RF, AHP, FR)"]
+    end
+
+    subgraph Data
+        PG[("PostGIS: districts, results, SHAP")]
+        COG[("COG rasters: factors, maps")]
+    end
+
+    WEB -- JSON / HTTPS --> REST
+    WEB -- tiles --> TILES
+    ING --> FAC --> MOD
+    MOD -- writes --> PG
+    MOD -- writes --> COG
+    FAC -- writes --> COG
+    REST -- reads --> PG
+    TILES -- reads --> COG
