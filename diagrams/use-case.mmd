@@ -1,0 +1,31 @@
+%% Use case diagram — Flood Susceptibility System
+%% Source of truth for slide 15. Mermaid has no native UML use case type,
+%% so actors are drawn as nodes and use cases as stadium shapes.
+%% Researcher inherits all Planner use cases.
+flowchart LR
+    Resident(("👤 Resident"))
+    Planner(("👤 Planner<br/>(akimat / MES)"))
+    Researcher(("👤 Researcher"))
+    Admin(("👤 Data admin<br/>(team)"))
+
+    subgraph SYS["Flood Susceptibility System"]
+        UC1([View susceptibility map])
+        UC2([Search address])
+        UC3([See factor explanation])
+        UC4([Compare cities])
+        UC5([Export report / data])
+        UC6([Update data & retrain])
+    end
+
+    Resident --- UC1
+    Resident --- UC2
+    Resident --- UC3
+
+    Planner --- UC1
+    Planner --- UC3
+    Planner --- UC4
+    Planner --- UC5
+
+    Researcher -. inherits .-> Planner
+
+    Admin --- UC6

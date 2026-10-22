@@ -1,0 +1,28 @@
+%% System context diagram — Flood Susceptibility System
+%% Source of truth for slide 14. Edit here, then re-export PNG to diagrams/exports/.
+flowchart LR
+    subgraph Users
+        R[Resident]
+        UP["Urban planner (akimat)"]
+        MES[MES planner]
+        RS["Researcher / student"]
+    end
+
+    SYS(["Flood Susceptibility System"])
+
+    subgraph External data sources
+        DEM[("Copernicus DEM / SRTM")]
+        S1[("Sentinel-1 via Earth Engine")]
+        WC[("ESA WorldCover & SoilGrids")]
+        OSM[("OpenStreetMap (rivers, geocoding)")]
+    end
+
+    R -- views map --> SYS
+    UP -- compares cities --> SYS
+    MES -- gets explanations --> SYS
+    RS -- exports data --> SYS
+
+    DEM -- elevation --> SYS
+    S1 -- flood extents --> SYS
+    WC -- land cover, soil --> SYS
+    OSM -- rivers, addresses --> SYS
