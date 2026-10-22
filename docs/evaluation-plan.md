@@ -36,7 +36,7 @@ Tests run in GitHub Actions on every pull request. Bugs are tracked in Taiga wit
 | Requirement | Verified by |
 |---|---|
 | FR1 Map | Playwright scenario 1, load time check |
-| FR2 Explanation | API contract test (SHAP shares sum to 100%) |
+| FR2 Explanation | API contract test: normalized absolute SHAP shares sum to 100% (±0.1), signs match raw SHAP values |
 | FR3 Comparison | Unit test comparing chart values with raster statistics |
 | FR4 Search | 10 test addresses, top-1 hit rate |
 | NFR Accuracy | AUC on the spatially blocked test set |
