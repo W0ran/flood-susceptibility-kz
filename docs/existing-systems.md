@@ -1,4 +1,4 @@
-# Comparison with existing systems
+### Comparison with existing systems
 
 Taiga: #9 «Сравнение существующих систем».
 
@@ -15,7 +15,7 @@ Four relevant systems are compared with the proposed solution on 8 criteria. Rat
 | Kazakh / Russian interface | No | No | No | Yes | Planned |
 | Focus on Kazakhstan | No | No | No | Yes | Yes |
 
-## Why a new solution is needed
+### Why a new solution is needed
 
 1. **Too coarse.** Global products work at river-basin or province scale, so a district inside Astana or Petropavl gets one value.
 2. **Black box.** Users see a risk class but not the reason: terrain, river proximity, soil or land cover.
@@ -24,7 +24,7 @@ Four relevant systems are compared with the proposed solution on 8 criteria. Rat
 
 **Our answer:** an open, district-level susceptibility map for Kazakhstan's cities that explains every result.
 
-## How the systems are used in the project
+### How the systems are used in the project
 
 - GloFAS and Aqueduct / JRC global hazard maps serve as **baseline 3** in the [evaluation plan](evaluation-plan.md): our model must beat them on agreement with the 2024 flood extents.
 - Kazhydromet bulletins are a source of flood event dates for building the inventory.
