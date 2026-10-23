@@ -1,14 +1,14 @@
-# Requirements specification
+### Requirements specification
 
 Taiga: #11 «Функциональные и нефункциональные требования».
 
 Prioritised with MoSCoW. ↑ = priority raised after the user survey (n = 22), see [relevance evidence](relevance-evidence.md).
 
-## Functional requirements
+### Functional requirements
 
 | ID | Requirement | Priority | Acceptance criterion | Use case |
 |---|---|---|---|---|
-| FR1 | Show a susceptibility map (5 classes) for a selected city | Must | The map loads in ≤ 3 s for each of the 3–4 cities | View susceptibility map |
+| FR1 | Show a susceptibility map (5 classes) for a selected city | Must | The map loads in ≤ 3 s for each of the 3-4 cities | View susceptibility map |
 | FR2 | Explain factor contributions for any clicked location | Must | The panel lists all factors with their contribution share: absolute SHAP values normalized to sum to 100%, with the sign shown as raising or lowering risk | See factor explanation |
 | FR3 | Compare cities by share of area in each class | Must | Chart values match values computed from the rasters (±1%) | Compare cities |
 | FR4 | Search by address or coordinates | Must ↑ | Top-1 geocoding hit for 9 of 10 test addresses | Search address |
@@ -17,7 +17,7 @@ Prioritised with MoSCoW. ↑ = priority raised after the user survey (n = 22), s
 | FR7 | Interface in Kazakh, Russian and English | Should ↑ | All UI strings translated; the language switch persists | all |
 | FR8 | Re-run the model with new data (admin) | Won't (now) | Deferred until after the diploma | Update data & retrain |
 
-## Non-functional requirements
+### Non-functional requirements
 
 | Category | Requirement | Priority | Acceptance criterion / measurement |
 |---|---|---|---|
@@ -30,6 +30,6 @@ Prioritised with MoSCoW. ↑ = priority raised after the user survey (n = 22), s
 | Compatibility | Works in common browsers and on phones | Should | Chrome, Firefox, Safari; mobile width 375 px |
 | Maintainability | Code is tested | Should | Test coverage ≥ 70% for API and pipeline |
 
-## Traceability
+### Traceability
 
 Each Must requirement is verified by a test or metric in the [evaluation plan](evaluation-plan.md). Use cases are shown in the [use case diagram](../diagrams/).
