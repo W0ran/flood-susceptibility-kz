@@ -1,14 +1,14 @@
-# Architecture diagrams
+### Architecture diagrams
 
 Editable sources are the `.mmd` files in this folder (Mermaid). GitHub renders them below; PNG exports used in the pre-defense presentation (slides 14–16) are in `exports/`.
 
 Taiga task: #12 «Диаграммы архитектуры». Owner: Tenglesbayev Zhandos.
 
-## System context diagram
+### System context diagram
 
 Who uses the system and which open data sources feed it.
 
-Source: [`system-context.mmd`](system-context.mmd) · Export: [`exports/system-context.png`](exports/system-context.png)
+Source: [`system-context.mmd`](system-context.mmd)  Export: [`exports/system-context.png`](exports/system-context.png)
 
 ```mermaid
 %% System context diagram — Flood Susceptibility System
@@ -41,11 +41,11 @@ flowchart LR
     OSM -- rivers, addresses --> SYS
 ```
 
-## Use case diagram
+### Use case diagram
 
 What each actor can do. The Researcher inherits all Planner use cases.
 
-Source: [`use-case.mmd`](use-case.mmd) · Export: [`exports/use-case.png`](exports/use-case.png)
+Source: [`use-case.mmd`](use-case.mmd)  Export: [`exports/use-case.png`](exports/use-case.png)
 
 ```mermaid
 %% Use case diagram — Flood Susceptibility System
@@ -81,11 +81,11 @@ flowchart LR
     Admin --- UC6
 ```
 
-## Component diagram (first draft)
+### Component diagram (first draft)
 
 How the system is split into layers. Processing runs offline as a Python pipeline and writes to the data layer; the API only reads.
 
-Source: [`component.mmd`](component.mmd) · Export: [`exports/component.png`](exports/component.png)
+Source: [`component.mmd`](component.mmd)  Export: [`exports/component.png`](exports/component.png)
 
 ```mermaid
 %% Component diagram (first draft) — Flood Susceptibility System

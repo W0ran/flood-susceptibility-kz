@@ -1,11 +1,11 @@
-## Task
-TG-  · https://tree.taiga.io/project/yerkosh-flood-susceptibility-kz-diploma/us/
+### Task
+TG-   https://tree.taiga.io/project/yerkosh-flood-susceptibility-kz-diploma/us/
 
-## What changed
+### What changed
 
-## How it was tested
+### How it was tested
 
-## Checklist
+### Checklist
 - [ ] Branch and commits start with the Taiga task ID (TG-…)
 - [ ] PR link added as a comment in the Taiga task
 - [ ] No secrets or personal data

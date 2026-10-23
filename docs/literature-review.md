@@ -1,10 +1,10 @@
-# Literature review
+### Literature review
 
 Taiga: #8 «Обзор литературы».
 
 12 peer-reviewed publications are used, including foundational works (AHP, SHAP) and recent studies (2021–2026), two of them on Kazakhstan. Bibliographic data checked against publisher pages on 21 October 2026.
 
-## Analysis table
+### Analysis table
 
 | # | Authors, year | Title | Source | Method / data | Key finding / limitation | What we use |
 |---|---|---|---|---|---|---|
@@ -21,21 +21,21 @@ Taiga: #8 «Обзор литературы».
 | 11 | Apshikur et al., 2023 | The method of multi-criteria analysis for determining the flood-hazardous area and the development of protective structures | ISPRS Archives (Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.) | GIS multi-criteria analysis; Ust-Kamenogorsk | MCA identifies flood-hazardous zones of a Kazakh city | Kazakhstan context, factor choice |
 | 12 | Makhmudova et al., 2026 | Modeling flood-prone areas using statistical and GIS approaches: Insights from the Yertis River basin, Kazakhstan | Environments (MDPI) | DEM-based scenarios; Yertis basin | Flood-prone zones of Kazakh cities along the Yertis | Flood zones of KZ cities, validation context |
 
-## Other sources
+### Other sources
 
 - The Astana Times, 12 April 2024 — official figures on the spring 2024 floods.
 - Copernicus GloFAS; WRI Aqueduct Floods; ThinkHazard!; Kazhydromet bulletins — see [existing systems](existing-systems.md).
 
-## Synthesis
+### Synthesis
 
 **What approaches exist.** Expert MCDA (AHP), bivariate statistics (FR, WoE) and machine learning (SVM, tree ensembles, hybrids). ML gives the highest accuracy but needs a flood inventory; MCDA and FR are transparent but subjective or ignore interactions.
 
 **What is known.** Terrain (elevation, slope, TWI), drainage (distance to rivers, drainage density) and land use (land cover, soil, imperviousness) are the most frequently used and most important factors. Sentinel-1 SAR provides reliable flood extents for training and validation.
 
 **Limitations the project takes into account.**
-- Black-box ML → per-cell SHAP explanations.
-- Subjective AHP weights → AHP used only as a baseline; sensitivity test ±20%.
-- Spatial autocorrelation inflates accuracy → spatially blocked validation.
-- Global models are too coarse → district-level maps for Kazakh cities.
+- Black-box ML - per-cell SHAP explanations.
+- Subjective AHP weights - AHP used only as a baseline; sensitivity test ±20%.
+- Spatial autocorrelation inflates accuracy - spatially blocked validation.
+- Global models are too coarse - district-level maps for Kazakh cities.
 
 **Gap.** There is no open, interpretable, district-level flood susceptibility tool for Kazakhstan's cities that non-experts can query and compare.

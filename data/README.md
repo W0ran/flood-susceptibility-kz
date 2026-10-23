@@ -1,4 +1,4 @@
-# data
+### data
 
 Only small samples and descriptions are stored here. Large rasters are downloaded by the pipeline into `data/raw/` (ignored by Git).
 

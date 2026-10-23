@@ -1,8 +1,8 @@
-# Verification and evaluation plan
+### Verification and evaluation plan
 
 Taiga: #14 «План верификации и оценки».
 
-## 1. Model evaluation
+### 1. Model evaluation
 
 | Aspect | Metric | Target | Measurement conditions |
 |---|---|---|---|
@@ -20,7 +20,7 @@ Taiga: #14 «План верификации и оценки».
 
 The main model (Random Forest + SHAP) must beat all three on AUC and on agreement with the 2024 flood extents.
 
-## 2. Software testing
+### 2. Software testing
 
 | Level | What is tested | Tool | Target |
 |---|---|---|---|
@@ -31,7 +31,7 @@ The main model (Random Forest + SHAP) must beat all three on AUC and on agreemen
 
 Tests run in GitHub Actions on every pull request. Bugs are tracked in Taiga with the task ID (for example `TG-23`).
 
-## 3. Requirement coverage
+### 3. Requirement coverage
 
 | Requirement | Verified by |
 |---|---|
