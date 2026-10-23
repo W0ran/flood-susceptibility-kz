@@ -1,10 +1,10 @@
-# Technology comparison
+### Technology comparison
 
 Taiga: #10 «Сравнение технологий».
 
 Four key technical decisions, each with three alternatives. ✓ marks the choice.
 
-## 1. Susceptibility method
+### 1. Susceptibility method
 
 | Option | Pros | Cons |
 |---|---|---|
@@ -15,7 +15,7 @@ Four key technical decisions, each with three alternatives. ✓ marks the choice
 **Choice:** Random Forest + SHAP as the main model; AHP and Frequency Ratio kept as interpretable baselines.
 **Requirement link:** NFR Accuracy (AUC ≥ 0.80), NFR Interpretability, FR2.
 
-## 2. GIS processing stack
+### 2. GIS processing stack
 
 | Option | Pros | Cons |
 |---|---|---|
@@ -26,7 +26,7 @@ Four key technical decisions, each with three alternatives. ✓ marks the choice
 **Choice:** QGIS + Python for the pipeline; Earth Engine only to download Sentinel-1 flood extents.
 **Requirement link:** NFR Reproducibility (pipeline re-runs from raw data with one command).
 
-## 3. Spatial data storage
+### 3. Spatial data storage
 
 | Option | Pros | Cons |
 |---|---|---|
@@ -37,7 +37,7 @@ Four key technical decisions, each with three alternatives. ✓ marks the choice
 **Choice:** PostGIS for districts, results and SHAP values; Cloud-Optimized GeoTIFF files for factor rasters.
 **Requirement link:** FR2, FR3, NFR Performance (API p95 ≤ 500 ms).
 
-## 4. Component communication and web map
+### 4. Component communication and web map
 
 | Option | Pros | Cons |
 |---|---|---|
@@ -46,4 +46,4 @@ Four key technical decisions, each with three alternatives. ✓ marks the choice
 | Static map tiles only | Cheapest hosting | No queries or explanations |
 
 **Choice:** FastAPI REST API (JSON + XYZ tiles) with a React + Leaflet front end; testable with Playwright and REST tests.
-**Requirement link:** FR1–FR6, NFR Performance (tiles ≤ 1 s), NFR Maintainability.
+**Requirement link:** FR1-FR6, NFR Performance (tiles ≤ 1 s), NFR Maintainability.
