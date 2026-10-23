@@ -12,14 +12,14 @@ venv/
 node_modules/
 dist/
 
-# Data (large rasters and downloads stay out of Git)
+# Data 
 data/raw/
 data/processed/
 *.tif
 *.tiff
 *.zip
 
-# IDE / OS
+# IDE/OS
 .idea/
 .vscode/
 .DS_Store
