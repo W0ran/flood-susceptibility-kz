@@ -1,8 +1,8 @@
-# Project management, milestones and risks
+### Project management, milestones and risks
 
 Taiga: #17 «Настройка репозитория, правил работы и CI».
 
-## Tools
+### Tools
 
 | Tool | Link | Purpose |
 |---|---|---|
@@ -11,7 +11,7 @@ Taiga: #17 «Настройка репозитория, правил работ�
 
 We moved from YouTrack to Taiga in October 2026 after discussing it with the supervisor; the supervisor and all team members are members of the Taiga project.
 
-## Responsibilities
+### Responsibilities
 
 | Member | Role | Main responsibilities |
 |---|---|---|
@@ -19,28 +19,28 @@ We moved from YouTrack to Taiga in October 2026 after discussing it with the sup
 | Tenglesbayev Zhandos | Developer | Model implementation, susceptibility maps, API and web map |
 | Tutkabay Assem | Analyst & PM | Literature, factor weighting, comparative analysis, interviews, schedule, supervisor contact |
 
-## Milestones
+### Milestones
 
 | Period | Milestone | Deliverable |
 |---|---|---|
 | Sep 2026 | Topic, team, approval | Application and justifications submitted |
-| Oct 2026 | Requirements & analysis | **Pre-defense 1 (24 Oct 2026)** — tag `prob-period-1` |
-| Oct – Nov 2026 | Data & factor rasters | Factor rasters for 3–4 cities, flood inventory |
+| Oct 2026 | Requirements & analysis | **Pre-defense 1 (24 Oct 2026)** - tag `prob-period-1` |
+| Oct – Nov 2026 | Data & factor rasters | Factor rasters for 3-4 cities, flood inventory |
 | Nov – Dec 2026 | Model + SHAP | Trained and validated models |
-| Dec 2026 – Feb 2027 | API & web map | Working prototype — pre-defense 2 (`pre-defense-2`) |
+| Dec 2026 – Feb 2027 | API & web map | Working prototype - pre-defense 2 (`pre-defense-2`) |
 | Feb – Mar 2027 | Testing & evaluation | Test reports, usability test |
-| Mar – May 2027 | Thesis & final defense | Thesis text — `final-pre-defense` |
+| Mar – May 2027 | Thesis & final defense | Thesis text - `final-pre-defense` |
 
 Work runs in 2-week sprints with a weekly team sync and a meeting with the supervisor at least every two weeks.
 
-## Dependencies
+### Dependencies
 
 - Factor rasters depend on open data availability (Copernicus DEM, Sentinel-1, ESA WorldCover, SoilGrids, OSM).
 - The main model depends on the flood inventory from Sentinel-1 (April 2024).
 - API and web map depend on model outputs stored in PostGIS / COG.
 - Usability testing depends on a working prototype and on survey volunteers.
 
-## Risks
+### Risks
 
 | Risk | Probability | Impact | Mitigation |
 |---|---|---|---|
@@ -51,6 +51,6 @@ Work runs in 2-week sprints with a weekly team sync and a meeting with the super
 | Scope creep (real-time warnings) | High | Medium | MoSCoW; warnings listed as future work |
 | Uneven contribution in the team | Medium | High | Each task has an owner in Taiga; every member commits from their own account through PRs |
 
-## Workflow
+### Workflow
 
 See [README](../README.md#how-we-work): task ID in branch and commit (`TG-23-...`), PR with review, tags for each pre-defense.
