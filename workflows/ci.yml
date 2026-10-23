@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  push:
+    branches:
+      - TG-18-dem-download
   pull_request:
 
 jobs:
