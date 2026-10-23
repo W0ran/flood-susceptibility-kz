@@ -6,23 +6,23 @@ Diploma project · School of Software Engineering · Astana IT University · 202
 
 The project builds an interpretable model that maps how susceptible districts of Kazakhstan's cities are to flooding, explains which factors drive the risk (SHAP), and lets users compare cities through a web map.
 
-## Links
+### Links
 
 - **Task board (Taiga):** https://tree.taiga.io/project/yerkosh-flood-susceptibility-kz-diploma/backlog
 - **Pre-defense 1 presentation:** [`docs/presentations/pre-defense-1.pdf`](docs/presentations/pre-defense-1.pdf)
-- **Documentation:** [`docs/`](docs/) · **Diagrams:** [`diagrams/`](diagrams/) · **Prototype:** [`prototype/`](prototype/)
+- **Documentation:** [`docs/`](docs/)  **Diagrams:** [`diagrams/`](diagrams/)  **Prototype:** [`prototype/`](prototype/)
 
-## Problem, users and expected outcomes
+### Problem, users and expected outcomes
 
 **Problem.** Spring snowmelt floods hit Kazakhstan's cities almost every year; in April 2024 nearly 100,000 people were evacuated across six regions. Residents and planners have no open, city-level map that shows which districts are susceptible and why. Global flood maps are coarse and black-box; local studies stay in papers.
 
 **Target users.** Akimat urban planning departments, emergency services (MES) planners, residents choosing or insuring housing, researchers and students.
 
-**Expected outcomes.** Susceptibility maps (5 classes) for 3–4 cities; per-factor explanation for any location; a city-to-city comparison report; a web prototype with an interactive map; a validated model (AUC and error analysis).
+**Expected outcomes.** Susceptibility maps (5 classes) for 3-4 cities; per-factor explanation for any location; a city-to-city comparison report; a web prototype with an interactive map; a validated model (AUC and error analysis).
 
-**Scope.** In: susceptibility, 8–10 factors (terrain, drainage, land use), 3–4 cities (candidates: Astana, Petropavl, Atyrau, Oral), open data, web map. Out: real-time forecasting and warnings, hydrodynamic simulation, damage in money. Details: [`docs/project-proposal.md`](docs/project-proposal.md).
+**Scope.** In: susceptibility, 8-10 factors (terrain, drainage, land use), 3-4 cities (candidates: Astana, Petropavl, Atyrau, Oral), open data, web map. Out: real-time forecasting and warnings, hydrodynamic simulation, damage in money. Details: [`docs/project-proposal.md`](docs/project-proposal.md).
 
-## Team
+### Team
 
 | Member | Group | Role | Main responsibilities |
 |---|---|---|---|
@@ -32,7 +32,7 @@ The project builds an interpretable model that maps how susceptible districts of
 
 **Supervisor:** Tulebayev Yersultan Bakhytovich, Senior Lecturer
 
-## Repository structure
+### Repository structure
 
 ```
 src/        source code: data pipeline, model, API, web client
@@ -43,7 +43,7 @@ prototype/  UX mockups of key scenarios and draft API
 tests/      automated tests (pytest, API and UI tests)
 ```
 
-## Documentation
+### Documentation
 
 | Document | Content |
 |---|---|
@@ -59,11 +59,11 @@ tests/      automated tests (pytest, API and UI tests)
 | [Project management](docs/project-management.md) | Roles, milestones, dependencies, risks |
 | [Supervisor feedback](docs/supervisor-feedback.md) | Comments and decisions |
 
-## Stack
+### Stack
 
 Python (GDAL, rasterio, geopandas, scikit-learn, SHAP) · QGIS · PostgreSQL + PostGIS · FastAPI · React + Leaflet · pytest, Playwright
 
-## How we work
+### How we work
 
 - Tasks live in [Taiga](https://tree.taiga.io/project/yerkosh-flood-susceptibility-kz-diploma/backlog) (Scrum, 2-week sprints). Every task has an owner, priority, acceptance criteria and a due date.
 - Every branch and commit starts with the Taiga task reference `TG-<number>`.
@@ -74,20 +74,20 @@ Python (GDAL, rasterio, geopandas, scikit-learn, SHAP) · QGIS · PostgreSQL + P
 - Never commit passwords, API keys, tokens or personal data. Large rasters stay out of Git (see `data/README.md`).
 - Milestones are tagged: `prob-period-1` (pre-defense 1, as required by the submission form), `pre-defense-2`, `final-pre-defense`. Tags are never moved.
 
-## Use of AI tools
+### Use of AI tools
 
 Parts of this stage were prepared with the help of an AI assistant (Claude, Anthropic).
 
-## Status
+### Status
 
 Current stage: requirements, analysis and design (pre-defense 1, 24 October 2026).
 
 | Done for pre-defense 1 | Next |
 |---|---|
-| Proposal, survey (n = 22), literature review, existing systems, technology comparison, requirements, diagrams, mockups, evaluation plan | Interviews with 3–5 users (TG-7), clickable Figma prototype (TG-13), AHP weights and city list (TG-16), data collection (TG-18) |
+| Proposal, survey (n = 22), literature review, existing systems, technology comparison, requirements, diagrams, mockups, evaluation plan | Interviews with 3-5 users (TG-7), clickable Figma prototype (TG-13), AHP weights and city list (TG-16), data collection (TG-18) |
 
 **Known limitations:** the survey sample is mostly Astana students; interviews are not done yet; no runnable code yet (planned from November 2026).
 
-## Setup and testing
+### Setup and testing
 
 No runnable code yet. Setup, run and test instructions will be added here together with the data pipeline (TG-18, TG-19) and CI (TG-17).
